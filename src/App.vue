@@ -10,7 +10,7 @@
       </ul>
     </nav>
   <div id="app">
-   <formationRow/>
+   <formationRow />
   </div>
 </template>
 

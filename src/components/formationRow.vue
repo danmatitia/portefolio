@@ -3,7 +3,9 @@
       <h2 class="title">
           Formations
       </h2>
-      <formationCard/>
+      <div class="wrapper--row">
+        <formation-card  v-for="(card, index) in 3" :key="index"/>
+    </div>
   </div>
 
 </template>
@@ -15,11 +17,21 @@ import formationCard from './formationCard.vue';
 export default {
     name: "formationRow",
     components:  {
-        formationCard
+        formationCard,
     }
 }
 </script>
 
-<style>
-
+<style lang="scss">
+    .formation--row{
+        .h2{
+            margin: 0px;
+        }
+        .wrapper--row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin : 40px;
+        }
+    }
 </style>
