@@ -1,5 +1,4 @@
 <template>
-  <div id="app">
     <nav id="nav">
       <ul>
         <li><router-link to="/">Accueil</router-link></li>
@@ -10,18 +9,18 @@
         </li>
       </ul>
     </nav>
-    <formationCard/>
-    
+  <div id="app">
+   <formationRow/>
   </div>
 </template>
 
 <script>
-import formationCard from '../src/components/formationCard.vue'
 
+import formationRow from './components/formationRow.vue'
 export default {
   name: 'App',
   components: {
-    formationCard
+    formationRow
   }
 }
 </script>
