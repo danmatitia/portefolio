@@ -24,8 +24,8 @@ export default {
 
 <style lang="scss">
     .formation--row{
-        .h2{
-            margin: 0px;
+        .title{
+            margin: 60px;
         }
         .wrapper--row{
             display: flex;

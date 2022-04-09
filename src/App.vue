@@ -10,17 +10,17 @@
       </ul>
     </nav>
   <div id="app">
-   <formationRow />
+   <Accueil />
   </div>
 </template>
 
 <script>
 
-import formationRow from './components/formationRow.vue'
+import Accueil from '../views/accueil.vue'
 export default {
   name: 'App',
   components: {
-    formationRow
+    Accueil,
   }
 }
 </script>
