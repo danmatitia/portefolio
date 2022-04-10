@@ -4,7 +4,7 @@
           Formations
       </h2>
       <div class="wrapper--row">
-        <formation-card  v-for="(card, index) in 3" :key="index"/>
+        <formation-card  v-for="(card, index) in three_formation" :info_formation="card" :key="index"/>
     </div>
   </div>
 
@@ -18,6 +18,9 @@ export default {
     name: "formationRow",
     components:  {
         formationCard,
+    },
+    props: {
+        three_formation: Array
     }
 }
 </script>

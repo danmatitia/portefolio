@@ -20,6 +20,9 @@
 <script>
 export default {
     name: "formationCard",
+    props: {
+        info_formation: Array
+    }
 }
 </script>
 
